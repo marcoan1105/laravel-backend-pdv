@@ -1,0 +1,6 @@
+1 - composer install
+2 - php artisan migrate
+3 - php artisan passport:install
+4 - Abra o banco de dados, execute update oauth_clients set user_id = 2 where id = 2
+5 - Utilize os dados para essa configuração do Front-End
+6 - php artisan serve
