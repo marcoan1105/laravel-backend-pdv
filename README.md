@@ -2,6 +2,8 @@
 ### Requisitos
 PHP >= 7.1
 
+MariaDB >= 10.1 ou Equivalente 
+
 Composer
 
 ### Instalação
