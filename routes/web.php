@@ -25,8 +25,8 @@ Route::get('/user/login', 'UserController@login')->name('login');
 Route::group(['middleware' => 'auth:api'], function(){
 
     // customer
-    Route::put('/customer', 'CustomerController@store');
-    Route::post('/customer/{id}', 'CustomerController@update');
+    Route::post('/customer', 'CustomerController@store');
+    Route::put('/customer/{id}', 'CustomerController@update');
     Route::get('/customers', 'CustomerController@index');
     Route::get('/customer/{id}', 'CustomerController@show');
 
@@ -36,9 +36,9 @@ Route::group(['middleware' => 'auth:api'], function(){
 
 
     // products
-    Route::put('/product', 'ProductController@store');
+    Route::post('/product', 'ProductController@store');
     Route::get('/products', 'ProductController@index');
-    Route::post('/product/{id}', 'ProductController@update');
+    Route::put('/product/{id}', 'ProductController@update');
     Route::get('/product/{id}', 'ProductController@show');
 
     // sales
@@ -48,9 +48,9 @@ Route::group(['middleware' => 'auth:api'], function(){
 
 
     // payment
-    Route::put('/payment', 'PaymentController@store');
+    Route::post('/payment', 'PaymentController@store');
     Route::get('/payment/{id}', 'PaymentController@show');
-    Route::post('/payment/{id}', 'PaymentController@update');
+    Route::put('/payment/{id}', 'PaymentController@update');
     Route::get('/payments', 'PaymentController@index');
 
     // user

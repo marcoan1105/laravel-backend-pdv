@@ -171,6 +171,12 @@ class CustomerController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+    }
+
+    public function deleteByDocument($document){
+        Customer::where([
+            ["document", "=", $document]
+        ])->delete();
     }
 }

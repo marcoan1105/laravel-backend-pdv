@@ -136,4 +136,10 @@ class UserController extends Controller
 
         return $return;
     }
+
+    public function deleteUserByEmail($email){
+        User::where([
+            ["email", "=", $email]
+        ])->delete();
+    }
 }
