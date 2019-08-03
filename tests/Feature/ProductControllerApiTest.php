@@ -34,7 +34,7 @@ class ProductControllerApiTest extends TestCase
             "description" => "Product Test",
             "unit" => "PC",
             "ncm" => "1231232",
-            "barcode" => "00000000000",
+            "c" => "00000000000",
             "value" => "100.00",
             "quantities" => "0"
         ], [

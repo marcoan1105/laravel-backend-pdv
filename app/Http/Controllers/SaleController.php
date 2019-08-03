@@ -19,7 +19,9 @@ class SaleController extends Controller
         'total' => 'required',
         'discount' => 'required',
         'products' => 'required',
-        'payments' => 'required'
+        'payments' => 'required',
+        'final_value' => 'required',
+        'date' => 'required'
     ];
 
     public function sale(Request $request){

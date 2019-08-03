@@ -33,6 +33,11 @@ class UserController extends Controller
             $return["errors"] = $validation->errors();
         }else{
             $user = null;
+            $id = null;
+
+            if(isset($data['id'])){
+                $id = $data['id'];
+            }
 
             if($id){
                 $user = User::find($id);

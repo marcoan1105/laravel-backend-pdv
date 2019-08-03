@@ -1,8 +1,0 @@
-1 - composer instal
-2 - copie o arquivo .env.example para .env e altere as conexões com o banco de dados
-3 - php artisan key:generate
-4 - php artisan migrate
-5 - php artisan passport:install
-6 - Abra o banco de dados, execute update oauth_clients set user_id = 2 where id = 2
-7 - Utilize os dados para essa configuração do Front-End
-8 - php artisan serve

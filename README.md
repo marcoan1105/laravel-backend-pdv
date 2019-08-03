@@ -25,5 +25,8 @@ Composer
 #### Subir Servidor
  - Terminal: php artisan serve
  
- #### Tests:
+#### Tests:
   - Terminal: composer test
+  
+#### Postman
+  - https://www.getpostman.com/collections/534fc9bce65930591950chumaker
